@@ -1,0 +1,2 @@
+watch('lib/(.*)\.rb$'){|m| system "prspec spec/*_spec.rb" }
+watch('spec/(.*)\.rb$'){|m| system "prspec spec/*.rb" }

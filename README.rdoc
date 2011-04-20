@@ -1,0 +1,60 @@
+= WxRunner
+
+以下の目的で使用するために作成
+* wxruby アプリでスレッドを使う
+* wxruby アプリの spec
+* 非トップレベルウインドウのプレビュー(テキストコントロールや、リストビュー等)
+
+== Install
+
+	gem install wx_runner
+
+== Useage
+
+1. ウインドウクラスでの run
+	require 'wx'
+	require 'wx_ruuner'
+	TextCtrl.run
+
+2. ウインドウクラスでの show
+	require 'wx'
+	require 'wx_ruuner'
+	WxRunner.run do
+		TextCtrl.show
+		CheckBox.show
+	end
+
+3. スレッド処理
+	ruby のスレッドを通常通り使えます。
+
+4. スレッド越しのアクセス
+	require 'wx'
+	require 'wx_ruuner'
+	WxRunner.run do
+		@text = TextCtrl.show
+		CheckBox.show
+		Thread.new
+			str = WxRunner.on_wx_thread do
+				@text.label = "sample"
+				@text.label
+			end
+		end
+	end
+
+5. spec 自動試験
+	require 'wx'
+	require 'wx_ruuner'
+	
+	WxRunner.run_thread
+	
+	describe "WxRunner show textctrl" do
+	  it "TextCtrl show" do
+	    r = WxRunner.on_wx_thread { Wx::TextCtrl.show }
+	    r.class.should == Wx::TextCtrl
+	    WxRunner.on_wx_thread { r.parent.close }
+	  end
+	end
+
+== License
+
+WxRunner is released under the MIT license.

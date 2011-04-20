@@ -1,0 +1,14 @@
+prefetch {
+  require 'pathname'
+  ENV["PRSPEC"] = 'true'
+  ENV["RAILS_ENV"] ||= 'test'
+  require 'rspec'
+  require 'rubygems'
+  require 'wx'
+}
+
+before_run {
+}
+
+after_run {
+}
