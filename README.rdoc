@@ -25,7 +25,7 @@ gem install wx_runner
 	end
 
 3. Threading
-You can use ruby threads as usual.
+	You can use ruby threads as usual.
 
 4. accessed over the thread
 	require 'wx'
@@ -33,8 +33,8 @@ You can use ruby threads as usual.
 	WxRunner.run do
 		@ text = TextCtrl.show
 		CheckBox.show
-			Thread.new
-				str = WxRunner.on_wx_thread do
+		Thread.new
+			str = WxRunner.on_wx_thread do
 				@ text.label = "sample"
 				@ text.label
 			end
@@ -44,16 +44,16 @@ You can use ruby threads as usual.
 5. Spec automatic test
 	require 'wx'
 	require 'wx_ruuner'
-
+	
 	WxRunner.run_thread
-
-describe "WxRunner show textctrl" do
-	it "TextCtrl show" do
-		r = WxRunner.on_wx_thread {Wx:: TextCtrl.show}
-		r.class.should == Wx:: TextCtrl
-		WxRunner.on_wx_thread {r.parent.close}
+	
+	describe "WxRunner show textctrl" do
+		it "TextCtrl show" do
+			r = WxRunner.on_wx_thread {Wx:: TextCtrl.show}
+			r.class.should == Wx:: TextCtrl
+			WxRunner.on_wx_thread {r.parent.close}
+		end
 	end
-end
 
 == License
 
