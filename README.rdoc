@@ -1,9 +1,9 @@
 = WxRunner
 
-ˆÈ‰º‚Ì–Ú“I‚Åg—p‚·‚é‚½‚ß‚Éì¬
-* wxruby ƒAƒvƒŠ‚ÅƒXƒŒƒbƒh‚ğg‚¤
-* wxruby ƒAƒvƒŠ‚Ì spec
-* ”ñƒgƒbƒvƒŒƒxƒ‹ƒEƒCƒ“ƒhƒE‚ÌƒvƒŒƒrƒ…[(ƒeƒLƒXƒgƒRƒ“ƒgƒ[ƒ‹‚âAƒŠƒXƒgƒrƒ…[“™)
+ä»¥ä¸‹ã®ç›®çš„ã§ä½¿ç”¨ã™ã‚‹ãŸã‚ã«ä½œæˆ
+* wxruby ã‚¢ãƒ—ãƒªã§ã‚¹ãƒ¬ãƒƒãƒ‰ã‚’ä½¿ã†
+* wxruby ã‚¢ãƒ—ãƒªã® spec
+* éãƒˆãƒƒãƒ—ãƒ¬ãƒ™ãƒ«ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ã®ãƒ—ãƒ¬ãƒ“ãƒ¥ãƒ¼(ãƒ†ã‚­ã‚¹ãƒˆã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã‚„ã€ãƒªã‚¹ãƒˆãƒ“ãƒ¥ãƒ¼ç­‰)
 
 == Install
 
@@ -11,12 +11,12 @@
 
 == Useage
 
-1. ƒEƒCƒ“ƒhƒEƒNƒ‰ƒX‚Å‚Ì run
+1. ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ã‚¯ãƒ©ã‚¹ã§ã® run
 	require 'wx'
 	require 'wx_ruuner'
 	TextCtrl.run
 
-2. ƒEƒCƒ“ƒhƒEƒNƒ‰ƒX‚Å‚Ì show
+2. ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ã‚¯ãƒ©ã‚¹ã§ã® show
 	require 'wx'
 	require 'wx_ruuner'
 	WxRunner.run do
@@ -24,10 +24,10 @@
 		CheckBox.show
 	end
 
-3. ƒXƒŒƒbƒhˆ—
-	ruby ‚ÌƒXƒŒƒbƒh‚ğ’Êí’Ê‚èg‚¦‚Ü‚·B
+3. ã‚¹ãƒ¬ãƒƒãƒ‰å‡¦ç†
+	ruby ã®ã‚¹ãƒ¬ãƒƒãƒ‰ã‚’é€šå¸¸é€šã‚Šä½¿ãˆã¾ã™ã€‚
 
-4. ƒXƒŒƒbƒh‰z‚µ‚ÌƒAƒNƒZƒX
+4. ã‚¹ãƒ¬ãƒƒãƒ‰è¶Šã—ã®ã‚¢ã‚¯ã‚»ã‚¹
 	require 'wx'
 	require 'wx_ruuner'
 	WxRunner.run do
@@ -41,7 +41,7 @@
 		end
 	end
 
-5. spec ©“®Œ±
+5. spec è‡ªå‹•è©¦é¨“
 	require 'wx'
 	require 'wx_ruuner'
 	
