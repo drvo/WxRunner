@@ -9,8 +9,10 @@ Gem::Specification.new do |s|
   s.authors     = ["drvo"]
   s.email       = ["drvo.gm@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{wx ruby プログラム実行補助} # wx ruby   run assistance program
-  s.description = %q{wx ruby プログラムで、別スレッドでのメインループ実行サポート。ウインドウクラスにrun, show を追加。} # wx ruby   program, support for running the main loop of another thread. Window class run, show added.
+  s.summary     = %q{Easy access wxruby message loop} # wx ruby   run assistance program
+  s.description = %q{Wxruby app using threads
+Wxruby spec app
+preview of non-top-level window (or text controls, list views, etc.)} # wx ruby   program, support for running the main loop of another thread. Window class run, show added.
 
   s.rubyforge_project = "wx_runner"
 
